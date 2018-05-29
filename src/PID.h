@@ -9,14 +9,18 @@ public:
   double p_error;
   double i_error;
   double d_error;
-
+  double previous_cte;
   /*
   * Coefficients
-  */ 
+  */
   double Kp;
   double Ki;
   double Kd;
 
+  long count ;
+  double error_sum;
+  double min_error;
+  double max_error;
   /*
   * Constructor
   */
